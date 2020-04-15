@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Voice assistent</string>
+    <string name="Button">Send</string>
+    <string name="hint">Ask question</string>
+</resources>
