@@ -146,7 +146,7 @@ public class AI {
     {
         Calendar c=Calendar.getInstance();
         c.set(Calendar.DAY_OF_YEAR,2020);
-        c.set(Calendar.DAY_OF_MONTH,3);
+        c.set(Calendar.MONTH,3);
         c.set(Calendar.DATE,8);
         Date d1 = c.getTime();
         sdf=new SimpleDateFormat("D");

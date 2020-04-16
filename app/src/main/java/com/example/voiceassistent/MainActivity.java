@@ -169,10 +169,10 @@ public class MainActivity extends AppCompatActivity {
                     public void accept(String s) { // определяем, как будет использоваться информация, полученная через callback
                         messageListAdapter.messageList.add(new Message(s, false));
                         messageListAdapter.notifyDataSetChanged();
+                        chatMessageList.scrollToPosition(messageListAdapter.messageList.size() - 1);
                         textToSpeech.speak(s, TextToSpeech.QUEUE_FLUSH, null, null);
                     }
                 });
-                chatMessageList.scrollToPosition(messageListAdapter.messageList.size() - 1);
                 questionText.setText("");
             }
             @Override
